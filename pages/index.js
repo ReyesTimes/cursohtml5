@@ -6,10 +6,10 @@ class Index extends Component {
     render() {
         return (
             <ExampleComponent>
-                :D
+                :O
             </ExampleComponent>
         );
     }
 }
- 
+
 export default Index;
