@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import React, { Component } from 'react'
 import generalService from  '../services/generalService'
+import Products from '../containers/Products'
 
 class NewExample extends Component {
     static async getInitialProps() {
@@ -13,16 +14,7 @@ class NewExample extends Component {
 
     render() {
         return (
-            <ul>
-                {
-                    this.props.products.map( product => (
-                        <li key={ product._id }>
-                            { product.name }
-                            <img src={ product.img.url } />
-                        </li>
-                    )
-                )}
-            </ul>
+            <Products products={ this.props.products }/>
         )
     }
 }

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const Products = ( props ) => (
-    <ul>
-
-    </ul>
+const Product = ( props ) => (
+    <li>
+        { props.product.name }
+        <img src={ props.product.img.url } />
+    </li>
 )
 
-export default Products
+export default Product
