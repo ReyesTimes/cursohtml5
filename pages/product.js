@@ -13,6 +13,7 @@ class NewExample extends Component {
     }
 
     render() {
+        console.log( this.props.products );
         return (
             <Products products={ this.props.products }/>
         )
