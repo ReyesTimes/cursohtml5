@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 function ExampleComponentNew( props ) {
     return (
-        <div>Este es un curso de HTML 5 ... { props.children }</div>
+        <div>Este es un curso de HTML 5 ... { props.children } { props.title }</div>
     )
 }
 
@@ -18,7 +18,7 @@ class ExampleComponent extends Component {
 
     render() {
         return (
-            <div>Este es un curso de HTML 5 { this.props.children } { this.state.example }</div>
+            <div>Este es un curso de HTML 5 { this.props.children }</div>
         )
     }
 }

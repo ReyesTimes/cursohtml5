@@ -5,7 +5,7 @@ import ExampleComponent from '../containers/Example';
 class Index extends Component {
     render() {
         return (
-            <ExampleComponent>
+            <ExampleComponent title="bien">
                 :D
             </ExampleComponent>
         );
